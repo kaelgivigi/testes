@@ -1,0 +1,48 @@
+<!doctype html>
+<meta charset="UTF-8">
+<!-- "var + *** = *** " fórmula de fixa apenas uma variável para não ter q mudar uma por uma-->
+<!-- "Math.round" arredonda números-->
+<!-- USEI A ""functio" para fazer a ação de pular a linha de um jeito mais simples -->
+<br>
+<script>
+    
+    
+    function mostra(){document.write("OU")}
+    function diz(frase){document.write(frase)} //coloca a variável em cada função para 
+    function pulaLinha(){   document.write("<br>")}
+    var puloLinha = "<br><br>";
+    var ano = 2025;
+    alert("página toda em java")
+    document.write("esse texto vai se mecher <br> (no futuro)")
+    document.write(puloLinha)
+    document.write("quem sabe daqui a " + (ano+25) + " anos")
+    document.write(puloLinha)
+
+    ano = 2020
+    
+    pulaLinha(); //função document.write("<br>")
+    mostra(); //função de document.write("OU")
+    pulaLinha();
+    document.write("talve em apenas " + (ano+25) + " anos")
+    pulaLinha ();   
+    var graus = (30 + 45 + 27 + 40)/4
+    pulaLinha();
+    document.write("e estará fazendo  " + graus + " graus célsius de temperatura")
+    
+    var graus = (30 + 45 + 27 + 40)/4
+    diz(puloLinha)
+    diz("e estará fazendo" + Math.round(graus) + " graus célsius de temperatura")
+
+    var rio = 30
+    var ceara = 45
+    var saoPaulo = 27
+    var piaui = 40
+    var graus = (rio + ceara + saoPaulo + piaui)/4
+    document.write(puloLinha)
+    document.write("e estará fazendo" + Math.round(graus) + " graus célsius de temperatura")
+
+    var idade = (1999 - ((2050+2045)/2))
+    document.write(puloLinha)
+    document.write("e a minha idade nessa época será " + idade )
+
+</script>
